@@ -1,0 +1,535 @@
+@font-face {
+  font-family: Oswald;
+  src: url("./assets/fonts/airbnb-cereal-app-medium.ttf");
+}
+
+@font-face {
+  font-family: NunitoSans;
+  src: url("./assets/fonts/Eksell\ Display\ Medium.otf");
+}
+@font-face {
+  font-family: Arienbnb;
+  src: url("./assets/fonts/airbnb-cereal-app-medium.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/RobotoCondensed-BoldItalic.ttf");
+}
+@font-face {
+  font-family: Panton;
+  src: url("./assets/fonts/PantonNarrow-Trial-ExtraLight.ttf");
+}
+:root {
+  --logo-text-color: #555;
+  --paragraph-color: #999;
+  --section-title-color: #9a6437;
+  --black: #1b1a1a;
+  --white: #fff;
+  --blue: #38bcea;
+}
+/* ==-===================      INITIAL STYLES      --====================== */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Airbnb, serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url("./assets/images/nurse-posing-against-background-dentist-who-treats-girl\ 1\ \(1\).png");
+  height: 740px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+button,
+input {
+  outline: hidden;
+  border: none;
+}
+button:active,
+button:focus,
+input:active,
+input:focus {
+  outline: 0px solid transparent;
+  border: none;
+}
+
+/* =========================================      NAVBAR          ====================== */
+.navbar {
+  background-color: #fff;
+}
+
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > span {
+  width: 57.354px;
+  /*height: 51.5px;*/
+  height: 1000px;
+  flex-shrink: 0;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+.nav-icons > .span {
+  width: 19, 20xp;
+  height: 7547px;
+  gap: 5;
+}
+.nav-icons2 {
+  display: flex;
+  align-items: center;
+}
+.nav-icons2 > .span {
+  width: 20.594px;
+  height: 20.594px;
+  flex-shrink: 0;
+  gap: 5;
+}
+.nav-icons3 {
+  display: flex;
+  align-items: center;
+}
+.nav-icons3 > .span {
+  width: 20.594px;
+  height: 20.594px;
+  flex-shrink: 0;
+}
+/*.navabar-icons1 > .google {
+  width: 20.594px;
+  height: 20.594px;
+  flex-shrink: 0;
+}
+.navbar-icons2 > .instagram {
+  width: 20.594px;
+  height: 20.594px;
+  flex-shrink: 0;
+}*/
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text1 {
+  color: #474747;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text2 {
+  color: #12354b;
+  text-align: right;
+  font-family: Panton;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text3 {
+  color: #3c3c3c;
+  text-align: center;
+  font-family: Panton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.link {
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.link:hover {
+  text-decoration-color: var(--black);
+}
+
+.navbar-icons4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-icons4 {
+  position: relative;
+}
+
+.navbar-icons4::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "1";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 6px;
+  color: var(--white);
+  position: absolute;
+  top: -3px;
+  right: -5px;
+}
+/* ======================botton==============================*/
+.universal-button {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 10px;
+  /* Button */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.universal-button:hover {
+  background-color: #0769fc;
+}
+/* ======================  HEADER   =============================== */
+
+/*.header {
+  background-image: url("./assets/images/nurse-posing-against-background-dentist-who-treats-girl\ 1\ \(1\).png");
+  height: 740px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}*/
+
+.section-title-fire {
+  color: var(--section-title-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px; /* 375% */
+  margin-left: 65px;
+  position: relative;
+}
+
+.section-title-fire::after {
+  display: block;
+  content: "";
+  width: 55px;
+  height: 1px;
+  background-color: var(--section-title-color);
+  position: absolute;
+  top: 50%;
+  left: -65px;
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title-container > h2 {
+  color: var(--black);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.products-types {
+  display: flex;
+  align-items: center;
+}
+.text4 {
+  color: #1a3444;
+  font-family: Panton;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.188%; /* 50.01px */
+}
+
+.text {
+  color: #6f6f6f;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/*================================Universal Button 2=========*/
+
+.universal-button2 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  background-color: #0769fc;
+}
+
+.universal-button:hover {
+  background-color: #0769fc;
+}
+
+.section-1 {
+  width: 1600.218px;
+  height: 630.631px;
+  flex-shrink: 0;
+  background: linear-gradient(45deg, #e6f2ff 0%, #faf1ed 100%);
+  cursor: pointer;
+  margin: 20px;
+}
+
+.pri {
+  max-width: 891.152px;
+  height: 100px;
+  margin: 50px;
+}
+
+.Pri-fiksatsi {
+  color: var(--black);
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-galery {
+  background-image: url(./assets/images/sertificat\ 700\ rub.png);
+  background-repeat: no-repeat;
+  background-position: 900px 40px;
+}
+
+.number {
+  width: 532.855px;
+  height: 93px;
+  margin: 50px;
+}
+.Number {
+  color: var(--black);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.49%;
+}
+
+#Number {
+  margin: 50px;
+  width: 232.972px;
+  height: 71.015px;
+  font-size: 25px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border-color: var(--white);
+  background: var(--white);
+}
+
+.zapis {
+  gap: 20px;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 20px;
+  width: 323.777px;
+  height: 71.015px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border-color: var(--blue);
+  background: var(--blue);
+  color: var(--white);
+}
+
+.obrabotku {
+  width: 493.219px;
+  margin: 50px;
+}
+
+.ob-span {
+  color: var(--gray);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.49%;
+}
+
+.a {
+  color: var(--gray);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.49%;
+  text-decoration-line: underline;
+}
+
+.section-2 {
+  margin: 50px;
+  cursor: pointer;
+}
+
+.lechenie {
+  color: var(--dark-blue);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 50px;
+}
+
+.div-pro {
+  width: 526.064px;
+  margin: 50px;
+}
+
+.images-div {
+  margin: 50px;
+}
+
+.prosta {
+  color: var(--gray);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Number {
+  color: var(--blue);
+}
+
+.medica {
+  left: 20px;
+}
+
+.md-clinic {
+  color: var(--dark-blue);
+  font-family: roboto;
+  gap: 20px;
+  margin: 50px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.div-predestovlayet {
+  width: 648.281px;
+  height: 46px;
+}
+
+.div-predestovlayet > span {
+  color: var(--black);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 50px;
+}
+
+.div-small {
+  width: 78px;
+  height: 26px;
+  background-color: var(--white);
+}
+
+.div-smalls > span {
+  background-color: rgb(226, 226, 226);
+  width: 140.043px;
+  height: 48.999px;
+  flex-shrink: 0;
+  margin: 20px;
+}
+
+.small-divs4 > span {
+  margin: 20px;
+  gap: 50px;
+  background-color: rgb(226, 226, 226);
+}
+
+.ok {
+  margin: 50px;
+}
+
+.images-div {
+  margin: 20px;
+}
+
+.polost {
+  color: #242424;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%; /* 0px */
+}
+
+#polost {
+  width: 581.177px;
+  margin: 50px;
+}
+.images-pictures {
+  display: flex;
+  width: 200px;
+  height: 90px;
+  gap: 30px;
+}
+
+.images-sertificat {
+  gap: 10px;
+  margin: 40px;
+  width: 537.921px;
+  height: 375.947px;
+  flex-shrink: 0;
+  display: flex;
+  border: 1px solid var(--white);
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.section-2 {
+  background-image: url(./assets/images/sELFIE.png);
+  background-repeat: no-repeat;
+  background-position: 800px 40px;
+  background-size: 800px;
+}
+
+.left {
+  width: 60px;
+  height: 100px;
+  bottom: 70px;
+}
